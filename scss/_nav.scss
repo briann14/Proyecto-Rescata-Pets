@@ -1,0 +1,24 @@
+.nav{
+    grid-area: nav;
+    margin-bottom: 20px;
+    
+    ul{
+        display: flex;
+        gap: 2rem;
+        li{
+            list-style: none;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.2rem;
+            &:hover{
+                color: blue;
+            }
+        }
+        
+    }
+}
+
+
+.text-bg-purple{
+    background-color: #e0dbd8;
+    }
+    

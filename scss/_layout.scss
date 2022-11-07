@@ -1,0 +1,19 @@
+.layout{
+    display: grid;
+    grid-template-areas: "nav nav nav nav"
+                         "left left right right"
+                         "left left right right"
+                         "left left right right"
+                         "footer footer footer footer";
+    grid-template-columns: 27% 27% 23% 23%;
+}
+h2{
+    font-family: 'Island Moments', cursive;
+    font-size: 3rem;
+    color: rgb(64, 180, 184);
+    .rescata{
+       margin-left:1rem ;
+       color: rgb(170, 81, 29);
+       font-size: 2.2rem;
+    }
+}

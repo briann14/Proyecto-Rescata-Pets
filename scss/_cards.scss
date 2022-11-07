@@ -1,0 +1,195 @@
+*,
+*:before, 
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clear-fix:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+@import 'https://fonts.googleapis.com/css?family=Do+Hyeon';
+
+$color-box-1 : #0f9bc0;
+$color-box-2 : rgba(34, 65, 154, .8);
+$color-box-3 : #57ccfd;
+$color-box-4 : #e660e3;
+$color-box-5 : #f07306;
+$color-box-6 : #9b1308;
+$color-box-7 : #de8b3e;
+
+
+
+.cards-main{
+  display: flex;
+  justify-content: center;
+}
+
+.card__collection {
+    position: relative;
+    display: block;
+    
+    padding: 10px;
+    font-family: 'Do Hyeon', sans-serif;
+    overflow: hidden;
+    
+  .cards {
+      width: 300px;
+      height: 400px;
+      display: block;
+      background-size: cover;
+      float: left;
+      border-radius: 15px;
+      position: relative;
+      overflow: hidden;
+      background-position: center;
+      margin: 10px;
+  }
+  
+  
+  
+  .cards--two {
+      position: relative;
+      backface-visibility: hidden;
+      
+      p {
+        position: absolute;
+        top: 83%;
+        left: -100%;
+        text-transform: capitalize;
+        color: #fff;
+        font-size: 18px;
+        z-index: 8;
+        transition: all .6s ease;
+      }
+      
+      &:hover {
+        
+        p {
+          left: 8%;
+        }
+        
+        img {
+          transform: translateY(-15px);
+        }
+        
+        .cards--two__rect {
+          top: 75%;
+          
+          &:before {
+            transform: translateY(15px);
+          }
+        }
+        
+        li {
+            transform: translateY(0);
+        }
+        
+        .cards--two__tri {
+          right: -40%;
+          
+          &:before {
+            right: -312px;
+          }
+          
+          
+        }
+      }
+      
+      img {
+        transition: all .2s ease;
+        height: 450px;
+      }
+      
+      &__tri {
+        border-top: 220px solid transparent;
+        border-bottom: 190px solid transparent;
+        border-right: 288px solid #fff;
+        opacity: .9;
+        position: absolute;
+        display: block;
+        top: 0;
+        right: -100%;
+        transition: all .3s ease-in-out;
+        
+        &:before {
+          border-top: 220px solid transparent;
+          border-bottom: 190px solid transparent;
+          border-right: 288px solid $color-box-3;
+          position: absolute;
+          content: '';
+          display: block;
+          top: -220px;
+          right: -612px;
+          transition: all .3s ease-in-out;
+          transition-delay: .2s;
+        }
+      }
+      
+      &__rect {
+        width: 750px;
+        height: 200px;
+        background: #fff;
+        display: block;
+        position: absolute;
+        top: 175%;
+        left: -78%;
+        transform: rotate(30deg);
+        z-index: 5;
+        opacity: .9;
+        transition: all .3s ease-in-out;
+        
+        &:before {
+          content: '';
+          display: block;
+          width: 100%;
+          position: relative;
+          height: 100%;
+          background: $color-box-5;
+          transform: translateY(200px);
+          z-index: 2;
+          transition: all .3s ease-in-out;
+          transition-delay: .1s;
+        }
+      }
+      
+      ul {
+        list-style: none;
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        z-index: 9;
+        
+        li {
+          display: inline-block;
+          font-size: 16px;
+          margin: 7px;
+          color: #fff;
+          transition: all .2s ease-in-out;
+          transform: translateY(100px);
+          
+          &:nth-child(2) {
+            transition-delay: .2s;
+          }
+          
+          &:nth-child(3) {
+            transition-delay: .3s;
+          }
+          
+          &:nth-child(4) {
+            transition-delay: .4s;
+          }
+        }
+      }
+    }
+  
+}
