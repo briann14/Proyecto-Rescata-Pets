@@ -71,6 +71,7 @@ h2 .rescata {
   text-align: center;
   border: 1px solid black;
   border-radius: 20px;
+  width: 200px;
 }
 .animales__items .text {
   height: 20%;
@@ -84,8 +85,12 @@ h2 .rescata {
   left: 0;
 }
 
-article.animales__items:hover {
+button.animales__items:hover {
   background-color: #f1ebe6;
+}
+
+button.animales__items:focus {
+  background-color: #7adb6e;
 }
 
 .input-flex {

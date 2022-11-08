@@ -30,6 +30,7 @@
         text-align: center;
         border: 1px solid black;
         border-radius: 20px;
+        width: 200px;
         
        
         .text{
@@ -50,10 +51,13 @@
        
     }
 }
-article.animales__items:hover{
+button.animales__items:hover{
     background-color: #f1ebe6 ;
   }
   
+  button.animales__items:focus{
+    background-color: #7adb6e ;
+  }
   
 
 .input-flex{
@@ -71,6 +75,7 @@ article.animales__items:hover{
     &:hover{
         background-color: #e9c6b5;
     }
+    
 }
 .btn:disabled{
     color: #000;
