@@ -24,9 +24,12 @@
   </head>
   <body class="layout">
     <!--Empieza el nav-->
+    <header>
     <nav class="nav navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
-        <h2 href="#">RP <span class="rescata">RescataPets</span></h2>
+        <a href="#">
+          <img id="logo" src="./logo.png" alt="logo"/>
+      </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -43,26 +46,26 @@
           id="navbarNav"
         >
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">INICIO</a>
+            <li class="">
+              <a class="" aria-current="page" href="#">INICIO</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ADOPTAR</a>
+            <li class="">
+              <a class="" href="#">ADOPTAR</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">VETERINARIAS</a>
+            <li class="">
+              <a class=" active" href="#">VETERINARIAS</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link">DONAR</a>
+            <li class="">
+              <a class="">DONAR</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link">FORO</a>
+            <li class="">
+              <a class="" href="foro.html">FORO</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
+            <li >
+              <a class="" href="./nosotros.html">NOSOTROS</a>
             </li>
             <li
-              class="nav-item"
+              class=""
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
@@ -72,6 +75,7 @@
         </div>
       </div>
     </nav>
+    </header>
     <!--fin del nav-->
 
     <!-- Modal formulario en inicio -->
@@ -147,7 +151,7 @@
     <!--section izquierda-->
     <section class="left">
       <!--titulo subtitulo-->
-      <h1>TODO EN UNA PAGINA</h1>
+      <h1>Todo en una pagina</h1>
       <h2>Encontra los mejores especialistas para tu mascota</h2>
 
       <!--selecciona animal-->
@@ -206,7 +210,7 @@
 
       <!--Aqui estara la seleccion del mapa con direccion -->
       <article>
-        <div class="card text-bg-purple mb-3" style="max-width: 60rem">
+        <div class="card text-bg-purple mb-3" style="max-width: 85rem">
           <div class="card-header">Veterinarias</div>
           <div class="card-body">
             <h5 class="card-title">Los mejores veterinarios de CABA</h5>
@@ -215,7 +219,7 @@
             </p>
           </div>
         </div>
-        <div class="card text-bg-purple mb-3" style="max-width: 60rem">
+        <div class="card text-bg-purple mb-3" style="max-width: 85rem">
           <div class="card-header">Hospitales</div>
           <div class="card-body">
             <h5 class="card-title">Hospitales 24hs</h5>
@@ -225,38 +229,50 @@
       </article>
     </section>
 
+
+    <section class="card-foro">
+      <div class="blog py-5">
+        <div class="container">
+          <div class="row">
+            <div class=" px-0  s">
+              <div class=" blog-thumbnail"> <img class="img-foro" src="https://i0.wp.com/cat-oh.com/wp-content/uploads/2021/10/perroygato_blogheader.png?fit=570%2C237&ssl=1" alt="">
+                <div class="caja-foro">
+                      <h2 href="#">Si necesitas ayuda puedes usar nuestro foro</h2>
+                    
+                    <h3 class="mb-3">
+                      En el podras interactuar con otros usuarios, hacerles preguntas o contestar tu las dudas
+                    </h3>
+                  
+                  <a href="#" class="al-foro">Al Foro</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
     <!--footer-->
     
     <footer class="footer">
       <div class="section fp-auto-height">
         <div class="footer">
           <!--nav del footer-->
-          <div>
-            <nav class="nav-footer">
-              <ul>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">INICIO</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">ADOPTAR</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">DAR EN ADOPCION</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active">VETERINARIAS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link">DONAR</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link">FORO</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+
           <!--nuestras redes-->
           <div class="flex-footer">
+            <div class="center">
+              <p>&copy; Todos los derechos reservados</p>
+          </div>
             <p>Nuestras Redes</p>
             <div class="social-links">
               <span

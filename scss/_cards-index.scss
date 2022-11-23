@@ -1,0 +1,27 @@
+.card-foro{
+    grid-area: card;
+    background-color: white;
+}
+.blog {
+   
+  .blog-thumbnail {
+    background-size: cover;
+    background-position: center center;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+  }
+  
+  a:hover {
+    opacity: 0.5;
+    text-decoration: none;
+  }
+  
+}
+.al-foro{
+    margin-top: 100px;
+    font-size: 2rem;
+    color: rgb(141, 136, 251);
+}
+
