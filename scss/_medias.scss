@@ -1,0 +1,39 @@
+@media  (max-width: 768px){
+    .layout{
+        grid-template-areas: "nav nav nav nav"
+                            "left left left left"
+                         "right right right right "
+                         "card card card card"
+
+                         "footer footer footer footer";
+    }
+    .blog .blog-thumbnail{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px){
+    .layout{
+        grid-template-areas: "nav "
+                            "left  "
+                         "right"
+                         "card "
+
+                         "footer";
+   
+    grid-template-columns : 100%;
+    }
+    img.img-foro{
+        width: 300px;
+    }
+    .input-group--mod{
+        left: 100px;
+    }
+    .animales__items{
+        width: 100px;
+    }
+    .animales__items .text{
+        font-size: 13px;
+    }
+    
+}
